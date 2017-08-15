@@ -28,7 +28,7 @@ Finally run the tests by executing `php vendor/bin/phpunit` in your console.
 * [ ] Mediator
 * [ ] Memento
 * [ ] Null Object
-* [ ] Observer
+* [x] Observer
 * [ ] State
 * [x] Strategy
 * [ ] Template Method
