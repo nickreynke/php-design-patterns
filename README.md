@@ -4,15 +4,14 @@ Design patterns, in PHP 7, learnt (**not** copied) from the eBook "[Design Patte
 
 > This repository is currently in its development phase so don't wonder if there aren't any patterns or there are some patterns missing.
 
-## Run a design pattern
+## Testing
 
-> Future feature. Not fully implemented yet!
+> Not fully implemented yet!
 
-For demonstration purposes I've set up a console command with which you can execute
-a desired design pattern to see what it does and outputs.
+For demonstration purposes I've set up tests which you can execute the design patterns
+to see if they work properly and to see what they output.
 
-To run the console command you need to install dependencies via [Composer](https://getcomposer.org)
+To run the tests you need to install dependencies via [Composer](https://getcomposer.org)
 by executing `composer install` in your console.
 
-Finally run the console command with `php bin/console run:design-pattern`. The correct usage
-can be displayed with `php bin/console run:design-pattern --help`.
+Finally run the tests by executing `php vendor/bin/phpunit` in your console.
