@@ -46,7 +46,7 @@ Finally run the tests by executing `php vendor/bin/phpunit` in your console.
 ### Structural design patterns
 
 * [ ] Adapter
-* [ ] Bridge
+* [x] Bridge
 * [ ] Composite
 * [ ] Decorator
 * [ ] Facade
