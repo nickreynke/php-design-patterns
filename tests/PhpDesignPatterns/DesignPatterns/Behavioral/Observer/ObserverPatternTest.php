@@ -33,10 +33,9 @@ class ObserverPatternTest extends TestCase
         self::assertTrue(in_array($observerOne, $observable->getObservers(), true));
         self::assertTrue(in_array($observerTwo, $observable->getObservers(), true));
 
-        // Change state of observable and notify all observers (just "$observerOne" in this case), within observable.
+        // Change state of observable and notify all observers, within observable
+        // and notify all observers (subscribers), within observable, that state has changed.
         $observable->setTemperature(25);
-
-        // Notify all observers (subscribers), within observable, that state has changed (for example).
         $observable->notify();
 
         // Assert that the current temperature for observers has changed.
@@ -49,7 +48,8 @@ class ObserverPatternTest extends TestCase
         // Assert that observer was successfully removed from observable.
         self::assertNotTrue(in_array($observerTwo, $observable->getObservers(), true));
 
-        // Change state of observable and notify all observers.
+        // Change state of observable and notify all observers
+        // and notify all observers (just $observerOne in this case), within observable, that state has changed.
         $observable->setTemperature(50);
         $observable->notify();
 
