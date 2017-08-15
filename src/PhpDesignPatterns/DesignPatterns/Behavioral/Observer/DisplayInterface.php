@@ -12,7 +12,14 @@ interface DisplayInterface
 {
 
     /**
+     * @return int
+     */
+    public function getCurrentTemperature(): int;
+
+    /**
      * Display information.
+     *
+     * @return string
      */
     public function display(): string;
 }

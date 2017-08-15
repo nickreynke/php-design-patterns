@@ -12,9 +12,17 @@ class PhoneDisplay implements DisplayInterface, \SplObserver
 {
 
     /**
-     * @var WeatherStation
+     * @var int
      */
-    private $weatherStation;
+    private $currentTemperature = 0;
+
+    /**
+     * @inheritDoc
+     */
+    public function getCurrentTemperature(): int
+    {
+        return $this->currentTemperature;
+    }
 
     /**
      * @inheritDoc
@@ -22,7 +30,7 @@ class PhoneDisplay implements DisplayInterface, \SplObserver
     public function display(): string
     {
         // Just for demonstration purposes.
-        return 'Phone: ' . $this->weatherStation->getTemperature();
+        return 'Phone: ' . $this->getCurrentTemperature();
     }
 
     /**
@@ -31,7 +39,7 @@ class PhoneDisplay implements DisplayInterface, \SplObserver
     public function update(\SplSubject $subject): void
     {
         if ($subject instanceof WeatherStation) {
-            $this->weatherStation = $subject;
+            $this->currentTemperature = $subject->getTemperature();
         }
 
         $this->display();
