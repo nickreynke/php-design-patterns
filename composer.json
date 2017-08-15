@@ -1,0 +1,13 @@
+{
+    "name": "nickreynke/php-design-patterns",
+    "authors": [
+        {
+            "name": "Nicklas Reincke",
+            "email": "contact@reynke.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": { "": "src/"}
+    }
+}
