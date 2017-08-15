@@ -12,15 +12,15 @@ Design patterns, in PHP 7.
 
 ## Testing
 
-> Not fully implemented yet!
-
 For demonstration purposes I've set up tests which you can execute the design patterns
-to see if they work properly and to see what they output.
+to see if they work properly, what they output and how you could use them.
 
 To run the tests you need to install dependencies via [Composer](https://getcomposer.org)
 by executing `composer install` in your console.
 
 Finally run the tests by executing `php vendor/bin/phpunit` in your console.
+
+The tests are located in the `tests` directory.
 
 ## Added patterns
 
