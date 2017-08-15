@@ -30,7 +30,7 @@ Finally run the tests by executing `php vendor/bin/phpunit` in your console.
 * [ ] Null Object
 * [ ] Observer
 * [ ] State
-* [ ] Strategy
+* [x] Strategy
 * [ ] Template Method
 * [ ] Visitor
 
