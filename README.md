@@ -42,7 +42,7 @@ The tests are located in the `tests` directory.
 ### Creational design patterns
 
 * [x] Abstract Factory
-* [ ] Builder
+* [x] Builder
 * [ ] Factory Method
 * [ ] Object Pool
 * [ ] Prototype
