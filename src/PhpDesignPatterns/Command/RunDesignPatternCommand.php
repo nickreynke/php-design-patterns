@@ -33,6 +33,7 @@ class RunDesignPatternCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): void
     {
+        // @todo Implement functionality to run a desired design pattern for demonstration purposes.
     }
 
 }
