@@ -14,14 +14,14 @@ use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\SwordInterface;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class TestAbstractFactory
+ * Class AbstractFactoryPatternTest
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class AbstractFactoryTest extends TestCase
+class AbstractFactoryPatternTest extends TestCase
 {
 
-    public function testAbstractFactory(): void
+    public function testAbstractFactoryPattern(): void
     {
         // Make good weapons! >:D
         self::assertInstanceOf(SwordInterface::class, GoodWeaponFactory::makeSword());

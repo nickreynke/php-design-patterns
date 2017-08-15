@@ -11,14 +11,14 @@ use PhpDesignPatterns\DesignPatterns\Behavioral\Strategy\SimpleQuackStrategy;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class StrategyTest
+ * Class StrategyPatternTest
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class StrategyTest extends TestCase
+class StrategyPatternTest extends TestCase
 {
 
-    public function testStrategy(): void
+    public function testStrategyPattern(): void
     {
         // Inject strategies to a new duck.
         $duck = new Duck(new NoFlyStrategy(), new SimpleQuackStrategy());
