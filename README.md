@@ -15,3 +15,40 @@ To run the tests you need to install dependencies via [Composer](https://getcomp
 by executing `composer install` in your console.
 
 Finally run the tests by executing `php vendor/bin/phpunit` in your console.
+
+## Added patterns
+
+### Behavioral design patterns
+
+* [ ] Chain of Responsibility
+* [ ] Command
+* [ ] Interpreter
+* [ ] Iterator
+* [ ] Mediator
+* [ ] Memento
+* [ ] Null Object
+* [ ] Observer
+* [ ] State
+* [ ] Strategy
+* [ ] Template Method
+* [ ] Visitor
+
+### Creational design patterns
+
+* [x] Abstract Factory
+* [ ] Builder
+* [ ] Factory Method
+* [ ] Object Pool
+* [ ] Prototype
+* [ ] Singleton
+
+### Structural design patterns
+
+* [ ] Adapter
+* [ ] Bridge
+* [ ] Composite
+* [ ] Decorator
+* [ ] Facade
+* [ ] Flyweight
+* [ ] Private Class Data
+* [ ] Proxy
