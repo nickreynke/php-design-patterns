@@ -1,9 +1,14 @@
 # PHP Design Patterns
 
-Design patterns, in PHP 7, learnt (**not** copied) from the eBook "[Design Patterns Explained Simply](https://sourcemaking.com/design-patterns-ebook)" by Alexander Shvets.
+Design patterns, in PHP 7.
 
 > This repository is currently in its development phase so don't wonder if there aren't any patterns or there are some patterns missing.
 > (See [Added patterns](#added-patterns))
+
+## Informational sources
+
+* eBook "[Design Patterns Explained Simply](https://sourcemaking.com/design-patterns-ebook)" by Alexander Shvets
+* YouTube playlist "[Head First: Design Patterns](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)" by Christopher Okhravi
 
 ## Testing
 
