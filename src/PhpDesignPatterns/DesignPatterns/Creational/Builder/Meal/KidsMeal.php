@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 /**
- * Class NormalMeal
+ * Class KidsMeal
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class NormalMeal implements MealInterface
+class KidsMeal implements MealInterface
 {
 
     /**

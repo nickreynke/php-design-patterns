@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 /**
- * Class NormalMealBuilder
+ * Class KidsMealBuilder
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class NormalMealBuilder extends AbstractMealBuilder
+class KidsMealBuilder extends AbstractMealBuilder
 {
 
     /**
@@ -16,7 +16,7 @@ class NormalMealBuilder extends AbstractMealBuilder
      */
     public function getMeal(): MealInterface
     {
-        return (new NormalMeal())
+        return (new KidsMeal())
             ->setProducts($this->getAddedProducts());
     }
 

@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 /**
- * Class Car
+ * Class ChickenBurger
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class CarToy implements ToyInterface
+class ChickenBurger implements BurgerInterface
 {
 
     /**
@@ -17,7 +17,7 @@ class CarToy implements ToyInterface
     public function getName(): string
     {
         // Just for demonstration purposes.
-        return 'Car Toy';
+        return 'Chicken Burger';
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 /**
  * Interface MealInterface

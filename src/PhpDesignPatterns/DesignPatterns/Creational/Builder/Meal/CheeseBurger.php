@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 /**
- * Class ChickenBurger
+ * Class CheeseBurger
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class ChickenBurger implements BurgerInterface
+class CheeseBurger implements BurgerInterface
 {
 
     /**
@@ -17,7 +17,7 @@ class ChickenBurger implements BurgerInterface
     public function getName(): string
     {
         // Just for demonstration purposes.
-        return 'Chicken Burger';
+        return 'Cheeseburger';
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Tests\PhpDesignPatterns\DesignPatterns\Creational\Builder;
+namespace Tests\PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
 use PhpDesignPatterns\DesignPatterns\Creational\Builder\CarToy;
 use PhpDesignPatterns\DesignPatterns\Creational\Builder\CheeseBurger;
@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 class BuilderPatternTest extends TestCase
 {
 
-    public function testBuilderPattern(): void
+    public function testBuilderPatternMeal(): void
     {
         $mealBuilder = new KidsMealBuilder();
 
