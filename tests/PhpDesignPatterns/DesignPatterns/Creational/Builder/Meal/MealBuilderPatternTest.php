@@ -3,10 +3,10 @@ declare(strict_types=1);
 
 namespace Tests\PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal;
 
-use PhpDesignPatterns\DesignPatterns\Creational\Builder\CarToy;
-use PhpDesignPatterns\DesignPatterns\Creational\Builder\CheeseBurger;
-use PhpDesignPatterns\DesignPatterns\Creational\Builder\CokeDrink;
-use PhpDesignPatterns\DesignPatterns\Creational\Builder\KidsMealBuilder;
+use PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal\CarToy;
+use PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal\CheeseBurger;
+use PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal\CokeDrink;
+use PhpDesignPatterns\DesignPatterns\Creational\Builder\Meal\KidsMealBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -14,10 +14,10 @@ use PHPUnit\Framework\TestCase;
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class BuilderPatternTest extends TestCase
+class MealBuilderPatternTest extends TestCase
 {
 
-    public function testBuilderPatternMeal(): void
+    public function testBuilderPattern(): void
     {
         $mealBuilder = new KidsMealBuilder();
 
