@@ -24,7 +24,7 @@ class QueryBuilderPatternTest extends TestCase
             ->where('name', 'LIKE', 'John Doe');
 
         self::assertEquals(
-            'SELECT `*` FROM `test` WHERE `id` = `1` AND WHERE `name` LIKE `John Doe`;',
+            'SELECT `*` FROM `test` WHERE `id` = `1` AND `name` LIKE `John Doe`;',
             $queryBuilder->getSql()
         );
     }

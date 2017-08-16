@@ -59,7 +59,7 @@ class QueryBuilder implements QueryBuilderInterface
         }
 
         $this->whereClauses[$hashOfWhereClause] = sprintf(
-            'WHERE `%s` %s `%s`',
+            '`%s` %s `%s`',
             $columnName,
             $operator,
             $expectedValue
@@ -80,7 +80,7 @@ class QueryBuilder implements QueryBuilderInterface
             'SELECT `%s` FROM `%s`%s;',
             $columnNames,
             $this->tableName,
-            strlen($whereClauses) > 0 ? ' ' . $whereClauses : ''
+            strlen($whereClauses) > 0 ? ' WHERE ' . $whereClauses : ''
         );
     }
 
