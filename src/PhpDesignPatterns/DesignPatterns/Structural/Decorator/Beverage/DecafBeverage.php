@@ -16,7 +16,7 @@ class DecafBeverage implements BeverageInterface
      */
     public function getDescription(): string
     {
-        return 'A base decaf';
+        return 'A decaf';
     }
 
     /**

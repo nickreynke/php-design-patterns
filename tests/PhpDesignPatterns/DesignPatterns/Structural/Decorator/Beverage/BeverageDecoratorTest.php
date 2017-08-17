@@ -20,6 +20,10 @@ class BeverageDecoratorTest extends TestCase
     {
         $beverageDecorator = new CaramelDecorator(new SoyDecorator(new EspressoBeverage()));
 
+        // Get the cost and description hierarchically.
+        self::assertEquals(4, $beverageDecorator->getCost());
+        self::assertEquals('An espresso. What else?', $beverageDecorator->getDescription());
+
         self::assertInstanceOf(CaramelDecorator::class, $beverageDecorator);
         self::assertInstanceOf(SoyDecorator::class, $beverageDecorator->getWrapped());
 

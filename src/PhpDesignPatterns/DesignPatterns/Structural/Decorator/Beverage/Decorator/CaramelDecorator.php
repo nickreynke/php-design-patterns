@@ -14,17 +14,9 @@ class CaramelDecorator extends BeverageDecorator
     /**
      * @inheritDoc
      */
-    public function getDescription(): string
-    {
-        return 'Some caramel';
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getCost(): int
     {
-        return 2;
+        return $this->getWrapped()->getCost() + 2;
     }
 
 }

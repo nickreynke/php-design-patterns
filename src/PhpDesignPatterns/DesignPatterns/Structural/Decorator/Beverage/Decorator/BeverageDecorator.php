@@ -31,6 +31,14 @@ abstract class BeverageDecorator implements BeverageInterface
     }
 
     /**
+     * @inheritDoc
+     */
+    public function getDescription(): string
+    {
+        return $this->wrapped->getDescription();
+    }
+
+    /**
      * Returns the beverage wrapped by this decorator.
      *
      * @return BeverageInterface

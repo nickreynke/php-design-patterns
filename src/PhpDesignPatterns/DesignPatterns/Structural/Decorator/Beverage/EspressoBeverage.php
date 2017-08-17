@@ -16,7 +16,7 @@ class EspressoBeverage implements BeverageInterface
      */
     public function getDescription(): string
     {
-        return 'A base espresso. What else?';
+        return 'An espresso. What else?';
     }
 
     /**

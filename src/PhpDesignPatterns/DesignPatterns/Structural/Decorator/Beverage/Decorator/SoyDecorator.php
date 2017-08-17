@@ -14,17 +14,9 @@ class SoyDecorator extends BeverageDecorator
     /**
      * @inheritDoc
      */
-    public function getDescription(): string
-    {
-        return 'Some soy';
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getCost(): int
     {
-        return 1;
+        return $this->getWrapped()->getCost() + 1;
     }
 
 }
