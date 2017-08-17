@@ -11,6 +11,7 @@ use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\GoodAxe;
 use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\GoodSword;
 use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\GoodWeaponFactory;
 use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\SwordInterface;
+use PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory\WeaponFactoryInterface;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -23,17 +24,23 @@ class AbstractFactoryPatternTest extends TestCase
 
     public function testAbstractFactoryPattern(): void
     {
+        /** @var WeaponFactoryInterface $weaponFactory */
+        $weaponFactory = new GoodWeaponFactory();
+
         // Make good weapons! >:D
-        self::assertInstanceOf(SwordInterface::class, GoodWeaponFactory::makeSword());
-        self::assertInstanceOf(GoodSword::class, GoodWeaponFactory::makeSword());
-        self::assertInstanceOf(AxeInterface::class, GoodWeaponFactory::makeAxe());
-        self::assertInstanceOf(GoodAxe::class, GoodWeaponFactory::makeAxe());
+        self::assertInstanceOf(SwordInterface::class, $weaponFactory->makeSword());
+        self::assertInstanceOf(GoodSword::class, $weaponFactory->makeSword());
+        self::assertInstanceOf(AxeInterface::class, $weaponFactory->makeAxe());
+        self::assertInstanceOf(GoodAxe::class, $weaponFactory->makeAxe());
+
+        /** @var WeaponFactoryInterface $weaponFactory */
+        $weaponFactory = new BadWeaponFactory();
 
         // Make bad weapons! >:(
-        self::assertInstanceOf(SwordInterface::class, BadWeaponFactory::makeSword());
-        self::assertInstanceOf(BadSword::class, BadWeaponFactory::makeSword());
-        self::assertInstanceOf(AxeInterface::class, BadWeaponFactory::makeAxe());
-        self::assertInstanceOf(BadAxe::class, BadWeaponFactory::makeAxe());
+        self::assertInstanceOf(SwordInterface::class, $weaponFactory->makeSword());
+        self::assertInstanceOf(BadSword::class, $weaponFactory->makeSword());
+        self::assertInstanceOf(AxeInterface::class, $weaponFactory->makeAxe());
+        self::assertInstanceOf(BadAxe::class, $weaponFactory->makeAxe());
     }
 
 }

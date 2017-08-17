@@ -14,11 +14,11 @@ interface WeaponFactoryInterface
     /**
      * @return SwordInterface
      */
-    public static function makeSword(): SwordInterface;
+    public function makeSword(): SwordInterface;
 
     /**
      * @return AxeInterface
      */
-    public static function makeAxe(): AxeInterface;
+    public function makeAxe(): AxeInterface;
 
 }
