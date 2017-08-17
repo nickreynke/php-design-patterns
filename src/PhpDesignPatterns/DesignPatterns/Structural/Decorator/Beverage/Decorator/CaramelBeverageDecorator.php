@@ -8,7 +8,7 @@ namespace PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorat
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class CaramelDecorator extends BeverageDecorator
+class CaramelBeverageDecorator extends BeverageDecorator
 {
 
     /**

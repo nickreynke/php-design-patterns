@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Tests\PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage;
 
-use PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorator\CaramelDecorator;
-use PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorator\SoyDecorator;
+use PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorator\CaramelBeverageDecorator;
+use PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorator\SoyBeverageDecorator;
 use PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\EspressoBeverage;
 use PHPUnit\Framework\TestCase;
 
@@ -18,16 +18,16 @@ class BeverageDecoratorTest extends TestCase
 
     public function testBeverageDecoratorPattern(): void
     {
-        $beverageDecorator = new CaramelDecorator(new SoyDecorator(new EspressoBeverage()));
+        $beverageDecorator = new CaramelBeverageDecorator(new SoyBeverageDecorator(new EspressoBeverage()));
 
         // Get the cost and description hierarchically.
         self::assertEquals(4, $beverageDecorator->getCost());
         self::assertEquals('An espresso. What else?', $beverageDecorator->getDescription());
 
-        self::assertInstanceOf(CaramelDecorator::class, $beverageDecorator);
-        self::assertInstanceOf(SoyDecorator::class, $beverageDecorator->getWrapped());
+        self::assertInstanceOf(CaramelBeverageDecorator::class, $beverageDecorator);
+        self::assertInstanceOf(SoyBeverageDecorator::class, $beverageDecorator->getWrapped());
 
-        /** @var SoyDecorator $decorator */
+        /** @var SoyBeverageDecorator $decorator */
         $decorator = $beverageDecorator->getWrapped();
         $beverage = $decorator->getWrapped();
 

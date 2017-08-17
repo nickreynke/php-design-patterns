@@ -8,7 +8,7 @@ namespace PhpDesignPatterns\DesignPatterns\Structural\Decorator\Beverage\Decorat
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class SoyDecorator extends BeverageDecorator
+class SoyBeverageDecorator extends BeverageDecorator
 {
 
     /**
