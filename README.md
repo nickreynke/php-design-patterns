@@ -43,7 +43,7 @@ The tests are located in the `tests` directory.
 
 * [x] Abstract Factory
 * [x] Builder
-* [ ] Factory Method
+* [x] Factory Method
 * [ ] Object Pool
 * [ ] Prototype
 * [ ] Singleton
