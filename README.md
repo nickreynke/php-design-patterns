@@ -53,7 +53,7 @@ The tests are located in the `tests` directory.
 * [ ] Adapter
 * [x] Bridge
 * [ ] Composite
-* [ ] Decorator
+* [x] Decorator
 * [ ] Facade
 * [ ] Flyweight
 * [ ] Private Class Data
