@@ -32,6 +32,8 @@ class AbstractFactoryPatternTest extends TestCase
         self::assertInstanceOf(GoodSwordWeapon::class, $weaponFactory->makeSword());
         self::assertInstanceOf(AxeWeaponInterface::class, $weaponFactory->makeAxe());
         self::assertInstanceOf(GoodAxeWeapon::class, $weaponFactory->makeAxe());
+        self::assertEquals(100, $weaponFactory->makeSword()->getStrength());
+        self::assertEquals(80, $weaponFactory->makeAxe()->getStrength());
 
         /** @var WeaponFactoryInterface $weaponFactory */
         $weaponFactory = new BadWeaponFactory();
@@ -41,6 +43,8 @@ class AbstractFactoryPatternTest extends TestCase
         self::assertInstanceOf(BadSwordWeapon::class, $weaponFactory->makeSword());
         self::assertInstanceOf(AxeWeaponInterface::class, $weaponFactory->makeAxe());
         self::assertInstanceOf(BadAxeWeapon::class, $weaponFactory->makeAxe());
+        self::assertEquals(40, $weaponFactory->makeSword()->getStrength());
+        self::assertEquals(20, $weaponFactory->makeAxe()->getStrength());
     }
 
 }
