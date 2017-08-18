@@ -14,17 +14,17 @@ class GoodWeaponFactory implements WeaponFactoryInterface
     /**
      * @inheritDoc
      */
-    public function makeSword(): SwordInterface
+    public function makeSword(): SwordWeaponInterface
     {
-        return new GoodSword();
+        return new GoodSwordWeapon();
     }
 
     /**
      * @inheritDoc
      */
-    public function makeAxe(): AxeInterface
+    public function makeAxe(): AxeWeaponInterface
     {
-        return new GoodAxe();
+        return new GoodAxeWeapon();
     }
 
 }

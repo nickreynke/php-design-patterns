@@ -8,6 +8,15 @@ namespace PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory;
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class GoodSword implements SwordInterface
+class GoodSwordWeapon implements SwordWeaponInterface
 {
+
+    /**
+     * @inheritDoc
+     */
+    public function getStrength(): int
+    {
+        return 100;
+    }
+
 }

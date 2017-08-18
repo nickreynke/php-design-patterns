@@ -12,6 +12,8 @@ interface AnimalFactoryInterface
 {
 
     /**
+     * The actual "factory method".
+     *
      * @return AnimalInterface
      */
     public function makeAnimal(): AnimalInterface;

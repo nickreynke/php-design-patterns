@@ -8,6 +8,15 @@ namespace PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory;
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class BadAxe implements AxeInterface
+class BadAxeWeapon implements AxeWeaponInterface
 {
+
+    /**
+     * @inheritDoc
+     */
+    public function getStrength(): int
+    {
+        return 20;
+    }
+
 }

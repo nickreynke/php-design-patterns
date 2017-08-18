@@ -8,6 +8,6 @@ namespace PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory;
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-interface SwordInterface
+interface SwordWeaponInterface extends WeaponInterface
 {
 }

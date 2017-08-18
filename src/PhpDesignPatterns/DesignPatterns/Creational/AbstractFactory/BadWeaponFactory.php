@@ -14,17 +14,17 @@ class BadWeaponFactory implements WeaponFactoryInterface
     /**
      * @inheritDoc
      */
-    public function makeSword(): SwordInterface
+    public function makeSword(): SwordWeaponInterface
     {
-        return new BadSword();
+        return new BadSwordWeapon();
     }
 
     /**
      * @inheritDoc
      */
-    public function makeAxe(): AxeInterface
+    public function makeAxe(): AxeWeaponInterface
     {
-        return new BadAxe();
+        return new BadAxeWeapon();
     }
 
 }

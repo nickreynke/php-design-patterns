@@ -6,19 +6,25 @@ namespace PhpDesignPatterns\DesignPatterns\Creational\AbstractFactory;
 /**
  * Interface WeaponFactoryInterface
  *
+ * Multiple "factory method"s.
+ *
  * @author Nicklas Reincke <contact@reynke.com>
  */
 interface WeaponFactoryInterface
 {
 
     /**
-     * @return SwordInterface
+     * First "factory method".
+     *
+     * @return SwordWeaponInterface
      */
-    public function makeSword(): SwordInterface;
+    public function makeSword(): SwordWeaponInterface;
 
     /**
-     * @return AxeInterface
+     * Second "factory method".
+     *
+     * @return AxeWeaponInterface
      */
-    public function makeAxe(): AxeInterface;
+    public function makeAxe(): AxeWeaponInterface;
 
 }
