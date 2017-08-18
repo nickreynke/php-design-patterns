@@ -46,7 +46,11 @@ The tests are located in the `tests` directory.
 * [x] **Factory Method** - „Creates an instance of several derived classes“
 * [ ] **Object Pool** - „Avoid expensive acquisition and release of resources by recycling objects that are no longer in use“
 * [ ] **Prototype** - „A fully initialized instance to be copied or cloned“
-* [ ] **Singleton** - „A class of which only a single instance can exist“
+* [x] **Singleton** - „A class of which only a single instance can exist“
+
+> Note on the **Singleton** pattern:
+>
+> Try to avoid the pattern and use dependency injection instead to pass this single instance around.
 
 ### Structural design patterns
 
