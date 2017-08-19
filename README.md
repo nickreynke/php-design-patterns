@@ -45,7 +45,7 @@ The tests are located in the `tests` directory.
 * [x] **Builder** - „Separates object construction from its representation“
 * [x] **Factory Method** - „Creates an instance of several derived classes“
 * [ ] **Object Pool** - „Avoid expensive acquisition and release of resources by recycling objects that are no longer in use“
-* [ ] **Prototype** - „A fully initialized instance to be copied or cloned“
+* [x] **Prototype** - „A fully initialized instance to be copied or cloned“
 * [x] **Singleton** - „A class of which only a single instance can exist“
 
 > Note on the **Singleton** pattern:
