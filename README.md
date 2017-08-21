@@ -44,7 +44,7 @@ The tests are located in the `tests` directory.
 * [x] **Abstract Factory** - „Creates an instance of several families of classes“
 * [x] **Builder** - „Separates object construction from its representation“
 * [x] **Factory Method** - „Creates an instance of several derived classes“
-* [ ] **Object Pool** - „Avoid expensive acquisition and release of resources by recycling objects that are no longer in use“
+* [x] **Object Pool** - „Avoid expensive acquisition and release of resources by recycling objects that are no longer in use“
 * [x] **Prototype** - „A fully initialized instance to be copied or cloned“
 * [x] **Singleton** - „A class of which only a single instance can exist“
 
