@@ -58,7 +58,7 @@ The tests are located in the `tests` directory.
 * [x] **Bridge** - „Separates an object’s interface from its implementation“
 * [ ] **Composite** - „A tree structure of simple and composite objects“
 * [x] **Decorator** - „Add responsibilities to objects dynamically“
-* [ ] **Facade** - „A single class that represents an entire subsystem“
+* [x] **Facade** - „A single class that represents an entire subsystem“
 * [ ] **Flyweight** - „A fine-grained instance used for efficient sharing“
 * [ ] **Private Class Data** - „Restricts accessor/mutator access“
 * [ ] **Proxy** - „An object representing another object“
