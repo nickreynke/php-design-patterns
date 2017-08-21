@@ -56,7 +56,7 @@ The tests are located in the `tests` directory.
 
 * [x] **Adapter** - „Match interfaces of different classes“
 * [x] **Bridge** - „Separates an object’s interface from its implementation“
-* [ ] **Composite** - „A tree structure of simple and composite objects“
+* [x] **Composite** - „A tree structure of simple and composite objects“
 * [x] **Decorator** - „Add responsibilities to objects dynamically“
 * [x] **Facade** - „A single class that represents an entire subsystem“
 * [ ] **Flyweight** - „A fine-grained instance used for efficient sharing“
