@@ -48,7 +48,7 @@ class Directory implements DirectoryInterface
     /**
      * @param FilesystemItemInterface[] $filesystemItems
      */
-    public function setFilesystemItems(array $filesystemItems)
+    public function setFilesystemItems(array $filesystemItems): void
     {
         $this->filesystemItems = $filesystemItems;
     }

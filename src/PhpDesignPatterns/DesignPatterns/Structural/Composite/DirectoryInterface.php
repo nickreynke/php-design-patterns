@@ -20,7 +20,7 @@ interface DirectoryInterface extends FilesystemItemInterface
     /**
      * @param FilesystemItemInterface[] $filesystemItems
      */
-    public function setFilesystemItems(array $filesystemItems);
+    public function setFilesystemItems(array $filesystemItems): void;
 
     /**
      * @param FilesystemItemInterface $filesystemItem
