@@ -3,7 +3,7 @@
 Design patterns, in PHP 7.
 
 > This repository is currently in its development phase so don't wonder if there aren't any patterns or there are some patterns missing.
-> (See [Added patterns](#added-patterns))
+> (See [Added patterns](#added-patterns)) Also this repository intentionally set up for own learning purposes.
 
 ## Informational sources
 
