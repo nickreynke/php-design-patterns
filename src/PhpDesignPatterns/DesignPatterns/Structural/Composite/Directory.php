@@ -8,7 +8,7 @@ namespace PhpDesignPatterns\DesignPatterns\Structural\Composite;
  *
  * @author Nicklas Reincke <contact@reynke.com>
  */
-class Directory implements FilesystemItemInterface
+class Directory implements DirectoryInterface
 {
 
     /**
@@ -72,7 +72,9 @@ class Directory implements FilesystemItemInterface
                 return true;
             }
 
-            if ($filesystemItemInDirectory instanceof Directory && $filesystemItemInDirectory->hasFilesystemItem($filesystemItem)) {
+            if ($filesystemItemInDirectory instanceof DirectoryInterface &&
+                $filesystemItemInDirectory->hasFilesystemItem($filesystemItem)
+            ) {
                 return true;
             }
         }
@@ -81,14 +83,14 @@ class Directory implements FilesystemItemInterface
     }
 
     /**
-     * @param Directory $directory
+     * @param DirectoryInterface $directory
      * @param FilesystemItemInterface $filesystemItem
      * @param bool $searchRecursively
      *
      * @return bool
      */
     protected function hasFilesystemItemInDirectory(
-        Directory $directory,
+        DirectoryInterface $directory,
         FilesystemItemInterface $filesystemItem,
         bool $searchRecursively
     ): bool {
