@@ -73,7 +73,7 @@ class Directory implements DirectoryInterface
             }
 
             if ($filesystemItemInDirectory instanceof DirectoryInterface &&
-                $filesystemItemInDirectory->hasFilesystemItem($filesystemItem)
+                $filesystemItemInDirectory->hasFilesystemItem($filesystemItem, $searchRecursively)
             ) {
                 return true;
             }
