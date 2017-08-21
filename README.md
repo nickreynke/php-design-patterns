@@ -54,7 +54,7 @@ The tests are located in the `tests` directory.
 
 ### Structural design patterns
 
-* [ ] **Adapter** - „Match interfaces of different classes“
+* [x] **Adapter** - „Match interfaces of different classes“
 * [x] **Bridge** - „Separates an object’s interface from its implementation“
 * [ ] **Composite** - „A tree structure of simple and composite objects“
 * [x] **Decorator** - „Add responsibilities to objects dynamically“
