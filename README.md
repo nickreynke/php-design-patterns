@@ -60,5 +60,5 @@ The tests are located in the `tests` directory.
 * [x] **Decorator** - „Add responsibilities to objects dynamically“
 * [x] **Facade** - „A single class that represents an entire subsystem“
 * [ ] **Flyweight** - „A fine-grained instance used for efficient sharing“
-* [ ] **Private Class Data** - „Restricts accessor/mutator access“
+* [x] **Private Class Data** - „Restricts accessor/mutator access“
 * [ ] **Proxy** - „An object representing another object“
