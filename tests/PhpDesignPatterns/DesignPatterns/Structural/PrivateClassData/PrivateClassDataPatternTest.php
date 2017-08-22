@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Tests\PhpDesignPatterns\DesignPatterns\Structural\PrivateClassData;
 
-use PhpDesignPatterns\DesignPatterns\Structural\PrivateClassData\DataClass;
 use PhpDesignPatterns\DesignPatterns\Structural\PrivateClassData\MainClass;
 use PHPUnit\Framework\TestCase;
 

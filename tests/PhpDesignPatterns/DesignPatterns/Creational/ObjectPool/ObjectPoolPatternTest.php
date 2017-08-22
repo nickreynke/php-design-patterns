@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Tests\PhpDesignPatterns\DesignPatterns\Creational\ObjectPool;
 
-use PhpDesignPatterns\DesignPatterns\Creational\ObjectPool\Connection;
 use PhpDesignPatterns\DesignPatterns\Creational\ObjectPool\ConnectionPool;
 use PhpDesignPatterns\DesignPatterns\Creational\ObjectPool\ConnectionPoolInterface;
 use PHPUnit\Framework\TestCase;
