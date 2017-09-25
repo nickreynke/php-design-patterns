@@ -34,7 +34,7 @@ The tests are located in the `tests` directory.
 * [ ] **Memento** - „Capture and restore an object's internal state“
 * [ ] **Null Object** - „Designed to act as a default value of an object“
 * [x] **Observer** - „A way of notifying change to a number of classes“
-* [ ] **State** - „Alter an object's behavior when its state changes“
+* [x] **State** - „Alter an object's behavior when its state changes“
 * [x] **Strategy** - „Encapsulates an algorithm inside a class“
 * [ ] **Template Method** - „Defer the exact steps of an algorithm to a subclass“
 * [ ] **Visitor** - „Defines a new operation to a class without change“
